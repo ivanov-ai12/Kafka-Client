@@ -66,7 +66,7 @@ $consumer = new KafkaConsumer([
     Config::METADATA_CACHE_FILE     => '/tmp/metadata.php',
 ]);
 $consumer->subscribe(['test']);
-for ($i=0; $i<100; $i++) {
+while (true) {
     $data = $consumer->poll(1000);
     echo json_encode($data), PHP_EOL;
 }
