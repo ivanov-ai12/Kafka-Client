@@ -1,0 +1,19 @@
+{
+    "name": "alpari/kafka-client",
+    "description": "Implementation of Kafka Client in PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anton Ivanov",
+            "email": "ivanov-ai12@list.ru"
+        }
+    ],
+    "require": {
+        "php": "~7.1",
+        "react/promise": "^2.7"
+    },
+    "suggest": {
+        "ext-openssl": "to able SSL socket streams usage"
+    },
+}
